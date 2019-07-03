@@ -6,9 +6,9 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentstack',
       options:{
-        'api_key':'blt959fc26d90dbf5c3',
-        'access_token':'cs81e2fcbf04337cba65a62c1e',
-        'environment':'preview'
+        'api_key': process.env.CONTENTSTACK_API_KEY,
+        'access_token': process.env.CONTENTSTACK_ACCESS_TOKEN,
+        'environment': process.env.CONTENTSTACK_ENVIRONMENT,
       },
     },
     'gatsby-plugin-react-helmet'
